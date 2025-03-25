@@ -2,62 +2,63 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #000;
     box-sizing: border-box;
 }
 
 :root {
-    --blue-palette-color-1: #005b8b;
-    --blue-palette-color-2: #176c9d;
-    --blue-palette-color-3: #2e7db0;
-    --blue-palette-color-4: #458ec2;
-    --blue-palette-color-5: #5c9fd4;
-
-    --grey-palette-color-1: #6f7582;
-    --grey-palette-color-2: #9397a1;
-    --grey-palette-color-3: #b7bac0;
-    --grey-palette-color-4: #dbdce0;
+    --palette-color-1: #400101;
+    --palette-color-2: #F2D4C9;
+    --palette-color-3: #A6634B;
+    --palette-color-4: #591902;
+    --palette-color-5: #DFE4F2;
+    --palette-color-6: #a5887e;
 }
 
 body {
-    background-color: var(--grey-palette-color-1)
+    background-image: url("../img/bg-img.jpg");
+    background-size: cover;
 }
 
 h1 {
-    color: var(--blue-palette-color-1);
+    color: var(--palette-color-4);
+    white-space: nowrap;
 }
 
 .todo-container {
-    background-color: var(--grey-palette-color-4);
+    background-color: var(--palette-color-2);
     padding: 20px;
-    margin: 20px;
+    margin: 2vw 20vw;
     border-radius: 20px;
     justify-items: center;
 }
 
-
 header {
     margin-bottom: 30px;
-
 }
 
-#todo-form {}
-
-.form-control {
-    padding-bottom: 50px;
-
+#todo-form,
+#edit-form {
+    padding-bottom: 20px;
 }
 
 .form-control input,
 button {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
-    border-color: var(--grey-palette-color-4)
+    margin-bottom: 15px;
+    border: 3px solid var(--palette-color-3);
 }
 
 button {
-    background-color: var(--blue-palette-color-5);
+    border: 3px solid var(--palette-color-3);
+    cursor: pointer;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: space-between;
 }
 
 #cancel-edit-btn,
@@ -65,19 +66,23 @@ button {
     background-color: #f59a9a;
 }
 
+.button-cancel {
+    margin-top: -10px;
+}
+
 #filter-select {
     border-radius: 20px;
     padding: 5px;
 }
 
-#todo-list {
-    background-color: var(--grey-palette-color-2);
-    margin: 20px;
-    padding: 20px;
-    border: 5px solid var(--blue-palette-color-4);
-    border-radius: 10px;
+.todo {
+    padding: 10px;
+    margin: 5px;
+    border: 4px solid var(--palette-color-4);
+    border-radius: 5px;
+    background-color: var(--palette-color-3);
 }
 
-.todo {
-    margin-bottom: 20px;
+hr {
+    margin: 10px;
 }
