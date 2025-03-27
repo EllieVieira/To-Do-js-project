@@ -33,7 +33,7 @@ const saveTodo = (text) => {
 
     //FIM do criando os elementos HTML de novo
 
-    //appendChild é um método do JavaScript usado para adicionar um novo nó (elemento) como filho de outro nó (elemento). No caso o 'todoList' é o elemento pai e o 'todo' é um elemento filho sendo adicionado.
+    //o 'todoList' é o elemento pai e o 'todo' é um elemento filho sendo adicionado.
     todoList.appendChild(todo)
 
     //para esvaziar o input
