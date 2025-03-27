@@ -4,7 +4,7 @@ const todoInput = document.querySelector("#todo-input")
 const todoList = document.querySelector("#todo-list")
 const editForm = document.querySelector("#edit-form")
 const editInput = document.querySelector("#edit-input")
-const cancelEditBtn = document.querySelector  ("#cancel-edit-btn")
+const cancelEditBtn = document.querySelector("#cancel-edit-btn")
 
 // Funções
 const saveTodo = (text) => {
@@ -25,7 +25,7 @@ const saveTodo = (text) => {
     editBtn.classList.add("edit-todo")
     editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>'
     todo.appendChild(editBtn)
-    
+
     const deleteBtn = document.createElement("button");
     deleteBtn.classList.add("remove-todo")
     deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
@@ -38,10 +38,9 @@ const saveTodo = (text) => {
 
     //para esvaziar o input
     todoInput.value = ""
-    
-    //para voltar o cursor para o input e voltar a escrever
-    todoInput.focus ()
 
+    //para voltar o cursor para o input e voltar a escrever
+    todoInput.focus()
 }
 
 
@@ -49,10 +48,10 @@ const saveTodo = (text) => {
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const inputValue = todoInput.value 
+    const inputValue = todoInput.value
 
-    if(inputValue){
+    if (inputValue) {
         saveTodo(inputValue)
     }
-    
+
 })
