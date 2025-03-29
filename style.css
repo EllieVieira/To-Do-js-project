@@ -75,6 +75,7 @@ button:hover>i {
 
 #toolbar {
     display: flex;
+
 }
 
 #cancel-edit-btn,
@@ -91,9 +92,11 @@ button:hover>i {
     margin-top: -.8rem;
 }
 
+#search-input,
 #filter-select {
     border-radius: .5rem;
     padding: .6rem;
+    margin: .5rem;
 }
 
 .todo {
@@ -110,6 +113,7 @@ button:hover>i {
 
 .todo h3 {
     flex: 1;
+    word-break: break-word;
 }
 
 .todo button {
@@ -132,5 +136,6 @@ h3 {
 }
 
 hr {
-    margin: .8rem;
+    margin: .5rem;
+    border: 1px solid var(--palette-color-3);
 }
